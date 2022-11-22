@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(1, 50, 50);
+     
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .box{
+    transform-style: preserve-3d;
+    animation: animate 25s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: perspective(1000px) rotateX(0deg) rotate(25deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateX(360deg) rotate(25deg);
+    }
+}
+.container .box span{
+    position: absolute;
+    color: rgb(150, 3, 3);
+    font-size: 3.5em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 0 10px;
+    background: linear-gradient(90deg, transparent, rgba(0,0,0,0.5), transparent);
+    line-height: 0.76em;
+    transform-style: preserve-3d;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    transform: translate(-50%, -50%) rotateX(calc(var(--i) * 22.5deg)) translateZ(100px);
+}
+.container .box span i:nth-child(1){
+    font-style: initial;
+}
+.container .box span i:nth-child(2){
+    font-style: initial;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(205, 205, 205));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container .box span i:nth-child(3){
+    font-style: initial;
+    color: rgb(30, 66, 139);
+}
