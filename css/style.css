@@ -147,7 +147,7 @@ nav button{
 }
 
 .nav__menu a:hover{
-    color: var(--color-bg2);
+    /* color: var(--color-bg2); */
     font-size: 1.2rem;
 }
 
