@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerospace Club</title>
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- SWIPERJS cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-------------------AOS USE----------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+	<!-- Starting of Navbar -->
+	<nav>
+		<div class="container nav__container">
+            <form class="d-flex" id="navlogo">
+                <img src="{% static 'images/logos.jpg' %}">
+			</form>
+			<a href="/">
+                <h4>Aerospace Club</h4>
+			</a>
+            <ul class="nav__menu">
+                <li><a href="/">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="courses.html">Team Members</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+            </div>
+    </nav>
+    <!-- End of Navbar -->
+
+
+    {% block content %}
+    {% endblock %}
+
+
+    <script>
+            AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,54 +1,7 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aerospace Club</title>
-
-    <!-- ICONSCOUT CDN -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
-
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- SWIPERJS cdn -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <!-------------------AOS USE----------------->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
-
-<body>
-    <!-- Starting of Navbar -->
-    <nav>
-        <div class="container nav__container">
-            <form class="d-flex" id="navlogo">
-                <img src="{% static 'images/logos.jpg' %}">
-            </form>
-            <a href="/">
-                <h4>Aerospace Club</h4>
-            </a>
-            <ul class="nav__menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="courses.html">Team Members</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
-        </div>
-    </nav>
-    <!-- End of Navbar -->
-
+{% block content %}
     <!-- Starting of Header -->
     <header>
         <div class="container header__container">
@@ -60,7 +13,7 @@
                     collaboration processes, science and technology of aircraft & spacecraft, and their products. It
                     involves the study of science and engineering behind the physical properties of rockets, aircrafts
                     and spacecrafts.</p>
-                <a href="about.html" class="btn btn-primary">Get Started</a>
+                <a href="about" class="btn btn-primary">Get Started</a>
             </div>
             <div class="header__right" data-aos="zoom-in-left">
                 <div class="header__right-image">
@@ -154,7 +107,7 @@
                 <div class="course__image" data-aos="flip-up">
                     <a href="https://docs.google.com/presentation/d/1j9A_-pxizDEGw_wEtRvgkbezYPTEtfJQ/edit?usp=sharing&ouid=112971931886809850002&rtpof=true&sd=true"
                         target="_blank">
-                        <img src="{% static 'images/Extraimages/drone.jpg' %}" href="course.html">
+                        <img src="{% static 'images/Extraimages/drone.jpg' %}" href="course">
                     </a>
 
                 </div>
@@ -380,11 +333,11 @@
             <div class="footer__2">
                 <h4>Permalinks</h4>
                 <ul class="permalinks">
-                    <li><a href="index1.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="courses.html">Team Members</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="courses">Team Members</a></li>
+                    <li><a href="gallery">Gallery</a></li>
+                    <li><a href="contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer__4">
@@ -438,9 +391,4 @@
         });
     </script>
 
-    <script>
-        AOS.init();
-    </script>
-</body>
-
-</html>
+{% endblock %}
