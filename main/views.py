@@ -11,3 +11,7 @@ def about(request):
 
 def members(request):
     return render(request, 'main/members.html')
+
+
+def gallery(request):
+    return render(request, 'main/gallery.html')
