@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'main/css/about.css' %}">
+{% endblock %}
+
+{% block content %}
+    <!-- Achievement Section -->
+    <section class="about__achivements">
+        <!-- <h1>Achievements</h1> -->
+        <div class="container about__achievements-container">
+            <div class="about__achievements-left" data-aos="flip-left">
+                <img src="{% static 'images/aero 3@4x (1).png' %}" alt="">
+            </div>
+
+            <div class="about__achievements-right" data-aos="fade-up-left">
+                <h1>Achievements</h1>
+                <p>We succesfully made a fully funtional RC plane (after 4 crashes) and a Model Rocket with Parachute
+                    ejection mechanism which was successfully showcased at SPACE DEFENCE EXPO at VSSUT Burla along with
+                    a 3rd eye- an ancillary drone for the fighter aircraft with advance radar jamming technology.
+                    Apart from these, we have tied up with Star Laboratories Surat who guide us for various projects and
+                    conduct various programmes.
+
+                </p>
+                <!-- <div class="achievements__cards">
+                    <article class="achievement__card">
+
+                    </article>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+
+    <section class="about__aboutus">
+        <div class="container about__aboutus-container">
+            <div class="about__aboutus-left" data-aos="flip-left">
+                <h1>About Us</h1>
+                <p>As the name suggests,it is the space comprising earth's atmosphere and the space beyond.This is a
+                    primary field which is concerned with the design,development,testing,and production of
+                    aircraft,spacecraft and related sytems and equipments.
+
+                    This club was enacted in December 2019.The great height and such strong base of this club was
+                    created solely because of the dedication and hardwork of the members .
+
+                    This club was established by Mr.Soumojit Sarkar ,Mr.Aniket Sohan Bisoi,Mr.Ankit Pratihary,Mr.Sourav
+                    Kumar Sahoo,Mr.Rajesh Kumar Sethi,Mr.Ankit Nandi,Ms.Kalpataru Tripathy, Ms.Prachurya,Ms.Baisakhi
+                    Murmu, Mr.Gyanaranjan Sahoo,Mr.Minhaz Quadree,Mr.Pratyush Roy.They all came united together to build
+                    this club and to fulfill all the wildest space dreams.
+
+
+                </p>
+            </div>
+
+            <div class="about__aboutus-right" data-aos="fade-up-left">
+                <img src="{% static 'images/Extraimages/aero 2@4x.png' %}" alt="">
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,54 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aerospace Club</title>
-
-    <!-- ICONSCOUT CDN -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
-
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- SWIPERJS cdn -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-    <link rel="stylesheet" href="./css/style.css">
-    <!-------------------AOS USE----------------->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
-
-<body>
-    <!-- Starting of Navbar -->
-    <nav>
-        <div class="container nav__container">
-            <form class="d-flex" id="navlogo">
-                <img src="./Images/logos.jpg">
-            </form>
-            <a href="index1.html">
-                <h4>Aerospace Club</h4>
-            </a>
-            <ul class="nav__menu">
-                <li><a href="index1.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Team Members</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
-            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
-        </div>
-    </nav>
-
-    <!-- End of Navbar -->
-
+{% block content %}
     <!-- Starting of Header -->
     <header>
         <div class="container header__container">
@@ -60,11 +13,11 @@
                     collaboration processes, science and technology of aircraft & spacecraft, and their products. It
                     involves the study of science and engineering behind the physical properties of rockets, aircrafts
                     and spacecrafts.</p>
-                <a href="about.html" class="btn btn-primary">Get Started</a>
+                <a href="about" class="btn btn-primary">Get Started</a>
             </div>
             <div class="header__right" data-aos="zoom-in-left">
                 <div class="header__right-image">
-                    <img src="./Images/aero@4x.png" alt="">
+                    <img src="{% static 'images/aero@4x.png' %}" alt="">
                 </div>
             </div>
         </div>
@@ -78,7 +31,7 @@
         <div class="container categories__container">
             <div class="categories__left" data-aos="zoom-in-right">
                 <h1>Categories</h1>
-                <img src="./Images/catagorie.jpg">
+                <img src="{% static 'images/catagorie.jpg' %}">
                 <p> </p>
 
             </div>
@@ -138,7 +91,7 @@
                 <div class="course__image" data-aos="flip-down">
                     <a href="https://drive.google.com/drive/folders/1DQJVi4QFo0hL7-WyCpAGANCmSDRVpA6i?usp=sharing"
                         target="_blank">
-                        <img src="./Images/Extraimages/rocket.jpg">
+                        <img src="{% static 'images/Extraimages/rocket.jpg' %}">
                     </a>
                 </div>
                 <div class="course__info">
@@ -154,7 +107,7 @@
                 <div class="course__image" data-aos="flip-up">
                     <a href="https://docs.google.com/presentation/d/1j9A_-pxizDEGw_wEtRvgkbezYPTEtfJQ/edit?usp=sharing&ouid=112971931886809850002&rtpof=true&sd=true"
                         target="_blank">
-                        <img src="./Images/Extraimages/drone.jpg" href="course.html">
+                        <img src="{% static 'images/Extraimages/drone.jpg' %}" href="course">
                     </a>
 
                 </div>
@@ -170,7 +123,7 @@
                 <div class="course__image" data-aos="flip-up">
                     <a href="https://drive.google.com/drive/folders/1uZ5DuEb6WL6WfmueifOHE-NwcT85Vxg0?usp=sharing"
                         target="_blank">
-                        <img src="./Images/Extraimages/jet engine.jpg">
+                        <img src="{% static 'images/Extraimages/jet engine.jpg' %}">
                     </a>
                 </div>
                 <div class="course__info">
@@ -186,7 +139,7 @@
                 <div class="course__image" data-aos="flip-down">
                     <a href="https://drive.google.com/drive/folders/1peNUeZ2fXpg47Q1lQ4HEjWSZA2YjPJAF?usp=sharing"
                         target="_blank">
-                        <img src="./Images/Extraimages/PHYSICS.jpg">
+                        <img src="{% static 'images/Extraimages/PHYSICS.jpg' %}">
                     </a>
                 </div>
                 <div class="course__info">
@@ -270,7 +223,7 @@
                 <div class="question__answer">
                     <h4>Where it is Located 😅?</h4>
                     <!--<video width="320" height="240" controls>
-                        <source src="./Images/Extraimages/plane.mp4" type="video/mp4">
+                        <source src="{% static 'images/Extraimages/plane.mp4" type="video/mp4">
                       </video>-->
                     <p>The club room is situated at the Innovation Corridor of OUTR. We start from the
                         grounds and touch the skies with glory. </p>
@@ -295,7 +248,7 @@
         <div class="swiper-wrapper">
             <article class="testimonial swiper-slide">
                 <div class="avatar">
-                    <img src="./Images/shibam.jpg" alt="">
+                    <img src="{% static 'images/shibam.jpg' %}" alt="">
                 </div>
                 <div class="testimonial__info">
                      
@@ -311,7 +264,7 @@
 
             <article class="testimonial swiper-slide">
                 <div class="avatar">
-                    <img src="./Images/omm.jpeg" alt="">
+                    <img src="{% static 'images/omm.jpeg' %}" alt="">
                 </div>
                 <div class="testimonial__info">
                      
@@ -326,7 +279,7 @@
 
             <article class="testimonial swiper-slide">
                 <div class="avatar">
-                    <img src="./Images/rajat.jpeg" alt="">
+                    <img src="{% static 'images/rajat.jpeg' %}" alt="">
                 </div>
                 <div class="testimonial__info">
                      
@@ -342,10 +295,9 @@
 
             <article class="testimonial swiper-slide">
                 <div class="avatar">
-                    <img src="./Images/AATISH.jpeg" alt="">
+                    <img src="{% static 'images/AATISH.jpeg' %}" alt="">
                 </div>
                 <div class="testimonial__info">
-                     
                     <small>Student</small>
                 </div>
                 <div class="testimonial__body">
@@ -360,94 +312,25 @@
         <div class="swiper-pagination"></div>
     </section>
     <!-- End of Testimonials -->
-    <!-- Start of Footer -->
-    <footer>
-        <div class="container footer__container">
-            <!--<div class="footer__1">
-                <a href="index.html" class="footer__logo"><h4>AEROSPACE</h4></a>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus nostrum deleniti?
-                </p>
-            </div>-->
-            <div class="map">
-                <h4>MAP OF AEROSPACE CLUB</h4>
-                <!-- Google Map Copied Code -->
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.589682802243!2d85.77445031361638!3d20.275844986410984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7f9d486f7c3%3A0xde71ead59307dcca!2sOdisha%20University%20of%20Technology%20and%20Research!5e0!3m2!1sen!2sin!4v1648606298799!5m2!1sen!2sin"
-                    height="80%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+{% endblock %}
 
-            <div class="footer__2">
-                <h4>Permalinks</h4>
-                <ul class="permalinks">
-                    <li><a href="index1.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="courses.html">Team Members</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer__4">
-                <h4>Contact Us</h4>
-                <div>
-                    <p>+91 6370522664</p>
-                    <p>aerospacecet@gmail.com</p>
-                </div>
-                <ul class="footer__socials">
-                    <li>
-                        <a href="https://www.facebook.com/aerospacecetb/" target="_blank"><i
-                                class="uil uil-facebook-f"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/aerospace_outrb/" target="_blank"><i
-                                class="uil uil-instagram-alt"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/company/aerospacecetb" target="_blank"><i
-                                class="uil uil-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="uil uil-youtube"></i></a>
-                    </li>
-                </ul>
-            </div>
+{% block scripts %}
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-        </div>
-        <div class="footer__copyright">
-            <small>Copyright &copy; Aerospace Club OUTR-B</small>
-        </div>
-    </footer>
-    <!-- End of Footer -->
-
-
-
-
-
-
-
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./main.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            // when window width >= 600px
-            breakpoints: {
-                600: {
-                    slidesPerView: 2
-                }
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        // when window width >= 600px
+        breakpoints: {
+            600: {
+                slidesPerView: 2
             }
-        });
-    </script>
-
-    <script>
-        AOS.init();
-    </script>
-</body>
-
-</html>
+        }
+    });
+</script>
+{% endblock %}
