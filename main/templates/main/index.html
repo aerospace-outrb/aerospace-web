@@ -312,5 +312,29 @@
         <div class="swiper-pagination"></div>
     </section>
     <!-- End of Testimonials -->
+{% endblock %}
 
+{% block scripts %}
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        // when window width >= 600px
+        breakpoints: {
+            600: {
+                slidesPerView: 2
+            }
+        }
+    });
+</script>
+
+<script>
+    AOS.init();
+</script>
 {% endblock %}
