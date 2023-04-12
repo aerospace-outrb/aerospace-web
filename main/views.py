@@ -7,3 +7,7 @@ def index(request):
 
 def about(request):
     return render(request, 'main/about.html')
+
+
+def members(request):
+    return render(request, 'main/members.html')
