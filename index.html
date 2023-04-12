@@ -1,38 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/rolling.css">
     <title>Aerospace Club</title>
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- SWIPERJS cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!-------------------AOS USE----------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class="box">
-            <span style="--i:1"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:2"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:3"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:4"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:5"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:6"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:7"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:8"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:9"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:10"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:11"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:12"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:13"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:14"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:15"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
-            <span style="--i:16"><i>Aerospace </i> <i>✈</i> <i> Club</i></span>
+    <!-- Starting of Navbar -->
+    <nav>
+        <div class="container nav__container">
+            <form class="d-flex" id="navlogo">
+                <img src="./Images/logos.jpg">
+            </form>
+            <a href="index1.html">
+                <h4>Aerospace Club</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Team Members</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
         </div>
-    </div>
+    </nav>
+
+    <!-- End of Navbar -->
+
+    <!-- Starting of Header -->
+    <header>
+        <div class="container header__container">
+            <div class="header__left" data-aos="flip-left">
+                <h1>
+                    Engross Yourself In the field of Aerospace
+                </h1>
+                <p>Aerospace Engineering deals with the research, design, development, construction, testing,
+                    collaboration processes, science and technology of aircraft & spacecraft, and their products. It
+                    involves the study of science and engineering behind the physical properties of rockets, aircrafts
+                    and spacecrafts.</p>
+                <a href="about.html" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="header__right" data-aos="zoom-in-left">
+                <div class="header__right-image">
+                    <img src="./Images/aero@4x.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of Header -->
+
+
+    <!-- Start of Categories -->
+    <section class="categories">
+        <!-- <h1>Categories</h1> -->
+        <div class="container categories__container">
+            <div class="categories__left" data-aos="zoom-in-right">
+                <h1>Categories</h1>
+                <img src="./Images/catagorie.jpg">
+                <p> </p>
+
+            </div>
+            <div class="categories__right">
+                <article class="category" data-aos="flip-left">
+                    <span class="category__icon"><i class="uil uil-screw"></i></span>
+                    <h5>HARDWARE</h5>
+                    <p>The Hardware wing of Aerospace Club mainly focuses on the Communication, Power Supply,
+                        Navigation, Fuel Conservation, Safety Against Vibration and Shock, Structural integrity of the
+                        the planes and other devices. </p>
+                </article>
+                <article class="category" data-aos="flip-right">
+                    <span class="category__icon"><i class="uil uil-keyboard"></i></span>
+                    <h5>SOFTWARE</h5>
+                    <p>The Software wing of Aerospace Club mainly focuses on using simulation and computer programs and
+                        software to calculate and design the desired model for construction.</p>
+                </article>
+                <article class="category" data-aos="flip-left">
+                    <span class="category__icon"><i class="uil uil-palette"></i></span>
+                    <h5>DESIGNING</h5>
+                    <p>The Design wing of Aerospace Club mainly focuses on making the design of the aircraft and other
+                        concerned machines. It also deals with the promotion and social media aspect of the clubs.</p>
+                </article>
+                <article class="category" data-aos="flip-right">
+                    <span class="category__icon"><i class="uil uil-constructor"></i></span>
+                    <h5>MANUFACTURING</h5>
+                    <p>The Manufacturing wing of Aerospace Club mainly focuses on choosing materials and making the
+                        simulated models in real life i.e. it basically deals with producing the desired result in
+                        product form.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- <br><br><br> -->
+    <!-- End of Categories -->
+
+    <!-- Start of Courses -->
+    <section class="courses">
+        <h2>Our Popular Domain</h2>
+        <div class="container courses__container">
+            <article class="course">
+                <div class="course__image" data-aos="flip-up">
+                    <a href="https://drive.google.com/drive/folders/1DJOjQo1NqpfoIwBORVpQUJ7Q5Fm7VhR6?usp=sharing"
+                        target="_blank">
+                        <img src="https://i.pinimg.com/564x/54/59/b1/5459b1d5f7e38bf2ae5488f6d6da09b8.jpg">
+                    </a>
+                </div>
+                <div class="course__info">
+                    <h4>RC PLANE</h4>
+                    <p>It is a small plane which is controlled remotely by an operator using a radio-transmitter. Made
+                        using software like solidworks and XFLR5 for building and simulating the aeroplane, the plane
+                        had a successful flight.<br><br>Click On The Image To View Details.</p>
+                    <!-- <a href="course.html" class="btn btn-primary">Learn More</a> -->
+                </div>
+            </article>
+            <article class="course">
+                <div class="course__image" data-aos="flip-down">
+                    <a href="https://drive.google.com/drive/folders/1DQJVi4QFo0hL7-WyCpAGANCmSDRVpA6i?usp=sharing"
+                        target="_blank">
+                        <img src="./Images/Extraimages/rocket.jpg">
+                    </a>
+                </div>
+                <div class="course__info">
+                    <h4>ROCKET</h4>
+                    <p>Small rocket designed to reach low altitudes and be recovered. Rocket designed and simulated with
+                        Open Rocket software which had a sugar rocket motor with sugar fuel and potassium nitrate as
+                        oxidiser reached a remarkable height of 3000 to 4000 feet.<br>Click On The Image To View
+                        Details.</p>
+                    <!-- <a href="courses.html" class="btn btn-primary">Learn More</a> -->
+                </div>
+            </article>
+            <article class="course">
+                <div class="course__image" data-aos="flip-up">
+                    <a href="https://docs.google.com/presentation/d/1j9A_-pxizDEGw_wEtRvgkbezYPTEtfJQ/edit?usp=sharing&ouid=112971931886809850002&rtpof=true&sd=true"
+                        target="_blank">
+                        <img src="./Images/Extraimages/drone.jpg" href="course.html">
+                    </a>
+
+                </div>
+                <div class="course__info">
+                    <h4>DRONE</h4>
+                    <p>It’s an unmanned aircraft (UAV) that can be controlled remotely or can fly autonomously using
+                        embedded system software. Currently this is in research stage.<br><br><br><br>Click On The Image
+                        To View Details.</p>
+                    <!-- <a href="courses.html" class="btn btn-primary">Learn More</a> -->
+                </div>
+            </article>
+            <article class="course">
+                <div class="course__image" data-aos="flip-up">
+                    <a href="https://drive.google.com/drive/folders/1uZ5DuEb6WL6WfmueifOHE-NwcT85Vxg0?usp=sharing"
+                        target="_blank">
+                        <img src="./Images/Extraimages/jet engine.jpg">
+                    </a>
+                </div>
+                <div class="course__info">
+                    <h4>JET ENGINE</h4>
+                    <p>Jet engine is a internal-combustion engines that propels aircraft by means of the rearward
+                        discharge of a jet of fluid, usually hot exhaust gases generated by burning fuel with air drawn
+                        in from the atmosphere. Jets rely on the third of Newton’s laws of motion. Currently this is in
+                        research stage.<br><br>Click On The Image To View Details.</p>
+                    <!-- <a href="courses.html" class="btn btn-primary">Learn More</a> -->
+                </div>
+            </article>
+            <article class="course">
+                <div class="course__image" data-aos="flip-down">
+                    <a href="https://drive.google.com/drive/folders/1peNUeZ2fXpg47Q1lQ4HEjWSZA2YjPJAF?usp=sharing"
+                        target="_blank">
+                        <img src="./Images/Extraimages/PHYSICS.jpg">
+                    </a>
+                </div>
+                <div class="course__info">
+                    <h4>ASTRO PHYSICS</h4>
+                    <p>Astrophysics is a branch of space science that applies the laws of physics and chemistry to seek
+                        to understand the universe and our place in it. Discussion sessions are conducted on all
+                        possible mysteries this universe holds. We take part in many quizzes, discussion along with
+                        different colleges and organizations.
+                        <br><br>Click On The Image To View Details.
+
+                    </p>
+                    <!-- <a href="courses.html" class="btn btn-primary">Learn More</a> -->
+                </div>
+            </article>
+            <article class="course">
+                <div class="course__image" data-aos="flip-up">
+                    <a href="https://www.instagram.com/aerospace_outrb/" target="_blank">
+                        <img src="https://cdn.pixabay.com/photo/2018/01/06/07/53/social-3064515__340.jpg">
+                    </a>
+                </div>
+                <div class="course__info">
+                    <h4>SOCIAL MEDIA</h4>
+                    <p>Design is a plan for arranging elements in such a way as best to accomplish a particular purpose.
+                        The field of Aerospace Design involves creating airplanes or spacecraft along with developing
+                        new techniques and materials for flight.
+                        <br><br><br><br>Click On The Image To View Details.
+                    </p>
+                    <!-- <a href="courses.html" class="btn btn-primary">Learn More</a> -->
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- End of Courses -->
+
+
+
+    <!-- Start  of FAQ's -->
+    <section class="faqs">
+        <h2>Frequently Asked Questions !</h2>
+        <div class="container faqs__container">
+            <article class="faq" data-aos="flip-left">
+                <div class="faq__icon"><i class="uil uil-angle-right"></i></div>
+                <div class="question__answer">
+                    <h4>Why Aerospace 🙄?</h4>
+                    <p>Aerospace is important to research because of its lack of publicity. In addition to that we use
+                        it for many purposes, such as for travel, monitoring the surroundings around us, or maintaining
+                        national security. Many of the world's machines that help make our world go round, such as
+                        airplanes, spacecraft, drones, missiles, satellites, among others.</p>
+                </div>
+            </article>
+            <article class="faq" data-aos="flip-right">
+                <div class="faq__icon"><i class="uil uil-angle-right"></i></div>
+                <div class="question__answer">
+                    <h4>What is the scope 😃?</h4>
+                    <p>The aviation sector is growing rapidly and thereby increasing the scope in this sector as this
+                        job profile is very rewarding with high salary packages and a lot of job opportunities. India is
+                        one of the countries having brilliant and hardworking youth which can take the aviation sector
+                        to the next level.</p>
+                </div>
+            </article>
+            <article class="faq" data-aos="flip-left">
+                <div class="faq__icon"><i class="uil uil-angle-right"></i></div>
+                <div class="question__answer">
+                    <h4>What we do here at Aerospace Club 😎?</h4>
+                    <p>Aerospace Club deals with the study of RC plane, Drones, Rockets, Astrophysics, Jet engines,
+                        Satellites, in addition with a multitude of commercial, industrial and military applications.
+                        Here we work together as a team and are always ready to do new thing. </p>
+                </div>
+            </article>
+            <article class="faq" data-aos="flip-right">
+                <div class="faq__icon"><i class="uil uil-angle-right"></i></div>
+                <div class="question__answer">
+                    <h4>What is the Joining Process 😍🤩?</h4>
+                    <p>We aerospace enthusiast conduct Freshmen Inductions every year to recruit a new set of army to
+                        help us accomplish our goal. So, interested candidates can enroll in programmes and inductions
+                        to get into the club. </p>
+                </div>
+            </article>
+            <article class="faq" data-aos="flip-left">
+                <div class="faq__icon"><i class="uil uil-angle-right"></i></div>
+                <div class="question__answer">
+                    <h4>Where it is Located 😅?</h4>
+                    <!--<video width="320" height="240" controls>
+                        <source src="./Images/Extraimages/plane.mp4" type="video/mp4">
+                      </video>-->
+                    <p>The club room is situated at the Innovation Corridor of OUTR. We start from the
+                        grounds and touch the skies with glory. </p>
+                </div>
+            </article>
+            <article class="faq" data-aos="flip-right">
+                <div class="faq__icon"><i class="uil uil-angle-right"></i></div>
+                <div class="question__answer">
+                    <h4>Skills Required 🙄😶 ?</h4>
+                    <p>We require rookies. Yes, as they are the most interesting guys and they ask questions which we
+                        love to answer. So, to get into the club the only pre-requisite is INTEREST!!!!</p>
+                </div>
+            </article>
+
+
+        </div>
+    </section>
+    <!-- End  of FAQ's -->
+    <!-- Start  of TESTIMONIALS -->
+    <section class="container testimonials__container mySwiper">
+        <h2>Student's Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./Images/shibam.jpg" alt="">
+                </div>
+                <div class="testimonial__info">
+                     
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>As an Aerodynaimcs enthusiast, I wanted to know everything about planes and anything that flies.
+                        And this club gave me the spark to gather all the fascinating stuff about the things I longed
+                        for.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./Images/omm.jpeg" alt="">
+                </div>
+                <div class="testimonial__info">
+                     
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Got to learn about a lot of stuff from pin to plane, from rock to stars and what not. I got the
+                        opportunity to participate in a lot of events which were very enjoyable.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./Images/rajat.jpeg" alt="">
+                </div>
+                <div class="testimonial__info">
+                     
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>I liked to know about the space and what lies beneath them. To uncover the sectrets of space and
+                        stuff seem to be ultimate dream. In this club I could find MY group which shared the same dream
+                        and passion.
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./Images/AATISH.jpeg" alt="">
+                </div>
+                <div class="testimonial__info">
+                     
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Contributiong to projects was very exciting like the RC plane and model rocket. The most
+                        enjoyable parts were when even after the failures of flight testing, everyone was positive and
+                        kept their aim straight in front of their eyes.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    <!-- End of Testimonials -->
+    <!-- Start of Footer -->
+    <footer>
+        <div class="container footer__container">
+            <!--<div class="footer__1">
+                <a href="index.html" class="footer__logo"><h4>AEROSPACE</h4></a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus nostrum deleniti?
+                </p>
+            </div>-->
+            <div class="map">
+                <h4>MAP OF AEROSPACE CLUB</h4>
+                <!-- Google Map Copied Code -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.589682802243!2d85.77445031361638!3d20.275844986410984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a7f9d486f7c3%3A0xde71ead59307dcca!2sOdisha%20University%20of%20Technology%20and%20Research!5e0!3m2!1sen!2sin!4v1648606298799!5m2!1sen!2sin"
+                    height="80%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index1.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Team Members</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 6370522664</p>
+                    <p>aerospacecet@gmail.com</p>
+                </div>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="https://www.facebook.com/aerospacecetb/" target="_blank"><i
+                                class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/aerospace_outrb/" target="_blank"><i
+                                class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/aerospacecetb" target="_blank"><i
+                                class="uil uil-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright &copy; Aerospace Club OUTR-B</small>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // when window width >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
 
     <script>
-        setTimeout(function(){
-            window.location.href = 'index1.html';
-        },4000);
+        AOS.init();
     </script>
 </body>
+
 </html>
