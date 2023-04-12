@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/about.css' %}">
+<link rel="stylesheet" href="{% static 'main/css/about.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -59,6 +59,11 @@
             </div>
         </div>
     </section>
+{% endblock %}
 
-    <script src="{% static 'js/main.js' %}"></script>
+{% block scripts %}
+<script>
+    AOS.init();
+</script>
+
 {% endblock %}
